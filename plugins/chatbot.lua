@@ -108,7 +108,7 @@ return {
 		"^[Dd]adash$",
 		"^[Ii] love you$",
 		"^[Ee]xtreme$",
-		"^[Kk]hbo?$",
+		"^[Kk]hobi?$",
 		"^[Ss]udo$",
 		"^[Aa]bbas$",
 		"^[Aa]bas$",
