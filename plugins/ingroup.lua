@@ -20,7 +20,10 @@ local function check_member_autorealm(cb_extra, success, result)
           lock_photo = 'no',
           lock_member = 'no',
           flood = 'yes',
-          bad words = 'no'
+          bad words = 'no',
+          lock arabic = 'no',
+          lock sticker = 'no',
+          lock english = 'no'
         }
       }
       save_data(_config.moderation.data, data)
@@ -54,7 +57,10 @@ local function check_member_realm_add(cb_extra, success, result)
           lock_photo = 'no',
           lock_member = 'no',
           flood = 'yes',
-          bad words = 'no'
+          bad words = 'no',
+          lock arabic = 'no',
+          lock sticker = 'no',
+          lock english = 'no'
         }
       }
       save_data(_config.moderation.data, data)
@@ -90,7 +96,10 @@ function check_member_group(cb_extra, success, result)
           lock_photo = 'no',
           lock_member = 'no',
           flood = 'yes',
-          bad words = 'no'
+          bad words = 'no',
+          lock arabic = 'no',
+          lock sticker = 'no',
+          lock english = 'no'
         }
       }
       save_data(_config.moderation.data, data)
@@ -126,7 +135,10 @@ local function check_member_modadd(cb_extra, success, result)
           lock_photo = 'no',
           lock_member = 'no',
           flood = 'yes',
-          bad words = 'no'
+          bad words = 'no',
+          lock arabic = 'no',
+          lock sticker = 'no',
+          lock english = 'no'
         }
       }
       save_data(_config.moderation.data, data)
