@@ -81,6 +81,12 @@ end
 if msg.text == "badboy" then
 	return "جانم ابجی"
 end
+if msg.text == "fafa" then
+	return "دیگه تو پی وی بات فوش ندی ها"
+end
+if msg.text == "فافا" then
+	return "دیگه تو پی وی بات فوش ندی ها"
+end
 end
 
 return {
