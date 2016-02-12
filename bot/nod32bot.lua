@@ -492,7 +492,7 @@ Developer,sudo: @Xx_admin1_zaq_xX
                 @unkownhacker
                 @Qq_admin2zaq_Qq
 
-channel: @ZaqChannel
+channel: @extremerobos
 کانال ما
 
 G00D LUCK ^_^
