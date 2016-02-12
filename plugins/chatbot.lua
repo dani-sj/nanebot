@@ -47,6 +47,39 @@ if msg.text == "Bye" then
 end
 if msg.text == "bye" then
 	return "Bye Bye"
+	end
+if msg.text == "abbas" then
+	return "با صاحبم چی کارداری؟؟"
+end
+if msg.text == "abas" then
+	return "با صاحبم چی کارداری؟؟"
+end
+if msg.text == "سلام" then
+	return "سلام"
+end
+if msg.text == "sudo" then
+	return "@unkownhacker"
+end
+if msg.text == "سلام" then
+	return "سلام"
+end
+if msg.text == "خوبی؟" then
+	return "مگه دکتری"
+end
+if msg.text == "extreme" then
+	return "bale"
+end
+if msg.text == "عباس" then
+	return "با صاحبم چی کار داری؟؟"
+end
+if msg.text == "i love you" then
+	return "me too💋💋💋"
+end
+if msg.text == "داداش" then
+	return "کدوم داداش؟؟"
+end
+if msg.text == "badboy" then
+	return "جانم ابجی"
 end
 end
 
