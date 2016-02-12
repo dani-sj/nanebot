@@ -101,7 +101,7 @@ function check_member_group(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
-      return send_large_msg(receiver, 'You have been promoted as the owner.')
+      return send_large_msg(receiver, 'شما مدیر گروه شدید.')
     end
   end
 end
@@ -137,7 +137,7 @@ local function check_member_modadd(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
-      return send_large_msg(receiver, 'Group is added and you have been promoted as the owner ')
+      return send_large_msg(receiver, 'بات گروه را اختیار گرفت و شما به عنوان صاحب گروه انتخاب شدید ')
     end
   end
 end
@@ -286,7 +286,7 @@ end
 
 local function unlock_group_bots(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط برای مدیران گروه!"
   end
   local group_bots_lock = data[tostring(target)]['settings']['lock_bots']
   if group_bots_lock == 'no' then
@@ -299,7 +299,7 @@ local function unlock_group_bots(msg, data, target)
 end
 local function lock_group_tag(msg, data, target)
 if not is_momod(msg) then
-return "For moderators only!"
+return "فقط برای مدیران گروه!!"
 end
 local group_tag_lock = data[tostring(target)]['settings']['antitag']
 if group_tag_lock == 'yes' then
@@ -307,25 +307,25 @@ return 'Tag is already locked'
 else
 data[tostring(target)]['settings']['antitag'] = 'yes'
 save_data(_config.moderation.data, data)
-return 'Tag has been locked'
+return 'تگ کردن قفل شد'
 end
 end
 local function unlock_group_tag(msg, data, target)
 if not is_momod(msg) then
-return "For moderators only!"
+return "فقط برای مدیران گروه!!"
 end
 local group_tag_lock = data[tostring(target)]['settings']['antitag']
 if group_tag_lock == 'no' then
-return 'Tag is already unlocked'
+return 'تگ  کردن ازاد شد'
 else
 data[tostring(target)]['settings']['antitag'] = 'no'
 save_data(_config.moderation.data, data)
-return 'Tag has been unlocked'
+return '
 end
 end
 local function lock_group_join(msg, data, target)
 if not is_momod(msg) then
-return "For moderators only!"
+return "فقط برای مدیران گروه!!"
 end
 local group_join_lock = data[tostring(target)]['settings']['lock_join']
 if group_join_lock == 'yes' then
@@ -351,7 +351,7 @@ end
 end
 local function lock_group_link(msg, data, target)
 if not is_momod(msg) then
-return "For moderators only!"
+return "فقط برای مدیران گروه!!"
 end
 local group_link_lock = data[tostring(target)]['settings']['antilink']
 if group_link_lock == 'yes' then
@@ -364,7 +364,7 @@ end
 end
 local function unlock_group_link(msg, data, target)
 if not is_momod(msg) then
-return "For moderators only!"
+return "فقط برای مدیران گروه!!"
 end
 local group_link_lock = data[tostring(target)]['settings']['antilink']
 if group_link_lock == 'no' then
@@ -377,22 +377,22 @@ end
 end
 local function lock_group_namemod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط برای مدیران گروه!!"
   end
   local group_name_set = data[tostring(target)]['settings']['set_name']
   local group_name_lock = data[tostring(target)]['settings']['lock_name']
   if group_name_lock == 'yes' then
-    return 'Group name is already locked'
+    return 'اسم گروه قفل شد'
   else
     data[tostring(target)]['settings']['lock_name'] = 'yes'
     save_data(_config.moderation.data, data)
     rename_chat('chat#id'..target, group_name_set, ok_cb, false)
-    return 'Group name has been locked'
+    return 'اسم گروه قفل است'
   end
 end
 local function unlock_group_namemod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط برای مدیران گروه!!"
   end
   local group_name_set = data[tostring(target)]['settings']['set_name']
   local group_name_lock = data[tostring(target)]['settings']['lock_name']
@@ -401,12 +401,12 @@ local function unlock_group_namemod(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_name'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Group name has been unlocked'
+    return 'قفل اسم ازاد شد'
   end
 end
 local function lock_group_floodmod(msg, data, target)
   if not is_owner(msg) then
-    return "Only admins can do it for now"
+    return "
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'yes' then
@@ -420,7 +420,7 @@ end
 
 local function unlock_group_floodmod(msg, data, target)
   if not is_owner(msg) then
-    return "Only admins can do it for now"
+    return "فقط مدیران اصلی بات میتوانند"
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'no' then
