@@ -54,7 +54,7 @@ end
 if msg.text == "abas" then
 	return "با صاحبم چی کارداری؟؟"
 end
-if msg.text == "سلام" then
+if msg.text == "slm" then
 	return "سلام"
 end
 if msg.text == "sudo" then
@@ -63,7 +63,7 @@ end
 if msg.text == "سلام" then
 	return "سلام"
 end
-if msg.text == "خوبی؟" then
+if msg.text == "khobi?" then
 	return "مگه دکتری"
 end
 if msg.text == "extreme" then
@@ -75,7 +75,7 @@ end
 if msg.text == "i love you" then
 	return "me too💋💋💋"
 end
-if msg.text == "داداش" then
+if msg.text == "dadash" then
 	return "کدوم داداش؟؟"
 end
 if msg.text == "badboy" then
@@ -101,6 +101,17 @@ return {
 		"^[Uu]mbrella$",
 		"^[Bb]ye$",
 		"^?$",
+		"^[Ss]alam$",
+		"^[Ff]afa$",
+		"^[Ss]lm$",
+		"^[Bb]adboy$",
+		"^[Dd]adash$",
+		"^[Ii] love you$",
+		"^[Ee]xtreme$",
+		"^[Kk]hbo?$",
+		"^[Ss]udo$",
+		"^[Aa]bbas$",
+		"^[Aa]bas$",
 		"^[Ss]alam$",
 		}, 
 	run = run,
