@@ -47,7 +47,7 @@ if msg.text == "Bye" then
 end
 if msg.text == "bye" then
 	return "Bye Bye"
-	end
+end
 if msg.text == "abbas" then
 	return "با صاحبم چی کارداری؟؟"
 end
