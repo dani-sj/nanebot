@@ -241,6 +241,7 @@ function create_config( )
     "echo",
     "filter",
     "filterorg",
+    "calc",
     "music",
     "sticker",
     "feed",
@@ -481,6 +482,8 @@ extreme Commands list :
 
 !version
 ورژن ربات
+
+!calc 2+2
 
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
