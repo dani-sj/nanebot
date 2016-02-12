@@ -247,6 +247,7 @@ function create_config( )
     "well",
     "chatlock",
     "spm",
+    "poker",
     "chatbot",
     "sodu",
     "isX",
@@ -484,9 +485,9 @@ extreme Commands list :
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
 
-Developer: @unkownhacker
+Developer,sudo: @unkownhacker
            @abbasghrobot
-توسعه دهنده
+
 
 channel: @extremerobos
 کانال ما
