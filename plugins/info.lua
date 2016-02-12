@@ -41,13 +41,13 @@ local function res_user_callback(extra, success, result) -- /info <username> fun
 	local value = redis:hget(hash, result.id)
     if not value then
 	 if result.id == tonumber(Arian) then
-	   text = text..'Rank : Executive Admin \n\n'
+	   text = text..'Rank : sudo🌟🌟🌟🌟🌟 \n\n'
 	  elseif is_admin2(result.id) then
-	   text = text..'Rank : Admin \n\n'
+	   text = text..'Rank : Admin⭐️⭐️⭐️⭐️ \n\n'
 	  elseif is_owner2(result.id, extra.chat2) then
-	   text = text..'Rank : Owner \n\n'
+	   text = text..'Rank : Owner⭐️⭐️⭐ \n\n'
 	  elseif is_momod2(result.id, extra.chat2) then
-	    text = text..'Rank : Moderator \n\n'
+	    text = text..'Rank : Moderator⭐️⭐️ \n\n'
       else
 	    text = text..'Rank : Member \n\n'
 	 end
